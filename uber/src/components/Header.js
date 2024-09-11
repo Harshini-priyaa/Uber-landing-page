@@ -5,11 +5,14 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center bg-white p-8">
       {/* Left side: Form */}
-      <div className="max-w-lg w-full">
-        <h1 className="text-5xl font-bold mb-6">
-          Go anywhere with Uber
-        </h1>
-        
+      <div className="max-w-lg w-full pl-12"> {/* Added padding-left for the form */}
+        {/* Header Text */}
+        <div className="mb-6"> {/* Added container for the h1 tag */}
+          <h1 className="text-5xl font-bold">
+            Go anywhere with Uber
+          </h1>
+        </div>
+
         {/* Tabs for Ride and Package */}
         <div className="flex mb-4">
           <button className="flex items-center space-x-2 border-b-4 border-black p-2">
@@ -75,8 +78,8 @@ const Header = () => {
       </div>
 
       {/* Right side: Map Image */}
-      <div className="flex-1 ml-10">
-        <img src={Map} alt="Map" className="m-9 p-9 h-50 w-50 flex align-right" />
+      <div className="flex-1 ml-10 flex justify-end items-center">
+        <img src={Map} alt="Map" className="h-96 w-auto" />
       </div>
     </div>
   );
