@@ -2,16 +2,16 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-black text-white px-8 py-4 fixed w-full z-10">
+    <nav className="bg-black text-white px-10 py-4 fixed w-full z-10 shadow-lg"> {/* Added shadow for the navbar */}
       <div className="flex justify-between items-center">
         {/* Left Section */}
-        <div className="flex space-x-10 items-center">
+        <div className="flex space-x-12 items-center"> {/* Increased spacing for left section */}
           {/* Logo */}
-          <div className="text-3xl font-semibold">
+          <div className="text-3xl font-bold tracking-tight"> {/* Slightly bolded and tightened font */}
             Uber
           </div>
           {/* Menu Links */}
-          <div className="flex space-x-6 text-base">
+          <div className="flex space-x-8 text-base font-medium"> {/* Adjusted font weight and spacing */}
             <a href="#" className="hover:text-gray-300">Ride</a>
             <a href="#" className="hover:text-gray-300">Drive</a>
             <a href="#" className="hover:text-gray-300">Business</a>
@@ -23,14 +23,14 @@ const Navbar = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex space-x-6 items-center text-base">
+        <div className="flex space-x-6 items-center text-base font-medium"> {/* Adjusted font weight */}
           <div className="flex items-center space-x-1">
             <span className="text-lg">🌐</span>
             <a href="#" className="hover:text-gray-300">EN</a>
           </div>
           <a href="#" className="hover:text-gray-300">Help</a>
           <a href="#" className="hover:text-gray-300">Log in</a>
-          <button className="border border-white py-1 px-4 rounded-full hover:bg-gray-800 transition-all">
+          <button className="border border-white py-2 px-5 rounded-full hover:bg-gray-800 transition-all font-semibold"> {/* Added font weight */}
             Sign up
           </button>
         </div>
