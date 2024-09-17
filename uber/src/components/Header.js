@@ -3,11 +3,12 @@ import Map from '../Images/Map.png';
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-start bg-white px-12 py-20"> {/* Adjusted padding */}
+    <div className="flex flex-col lg:flex-row justify-between items-start bg-white px-40 py-20"> {/* Adjusted padding and layout for responsiveness */}
+      
       {/* Left side: Form */}
-      <div className="max-w-lg w-full">
+      <div className="lg:max-w-lg w-full lg:mr-16">
         {/* Header Text */}
-        <div className="mb-12"> {/* Increased bottom margin */}
+        <div className="mb-12">
           <h1 className="text-6xl font-bold leading-tight"> {/* Text size adjusted */}
             Go anywhere with Uber
           </h1>
@@ -64,19 +65,18 @@ const Header = () => {
             </div>
           </div>
 
-          <button className="w-full bg-black text-white py-4 rounded-md hover:bg-gray-800 transition text-lg font-semibold"> {/* Font adjustments */}
+          <button className="w-full bg-black text-white py-4 rounded-md hover:bg-gray-800 transition text-lg font-semibold">
             See prices
           </button>
         </div>
       </div>
 
       {/* Right side: Map Image */}
-      <div className="ml-12">
-        <img src={Map} alt="Map" className="h-[450px] w-auto object-contain" /> {/* Increased height */}
+      <div className="mt-50 lg:mt-20 lg:ml-50 flex-shrink-0">
+        <img src={Map} alt="Map" className="h-[700px] w-full lg:w-[650px] object-cover" /> {/* Adjusted width and object cover */}
       </div>
     </div>
   );
 };
 
 export default Header;
-      

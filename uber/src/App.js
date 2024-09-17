@@ -1,15 +1,22 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import Features from './components/Features';
-import Footer from './components/Footer';
+import Suggestions from './components/Suggestions';
+import Drive from './components/Drive';
+import BusinessDrive from './components/BusinessDrive';
+import RentCar from './components/RentCar';
+import DownloadSection from './components/DownloadSection';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Header/>
+      <Suggestions/>
+      <Drive/>
+      <BusinessDrive/>
+      <RentCar/>
+      <DownloadSection/>
     </div>
   );
 }
