@@ -12,10 +12,10 @@ import PlayStoreIcon from '../Images/playstore.png';
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-4 md:px-10">
 
         {/* Top Section with Uber Logo and Help Center */}
-        <div className="flex justify-start items-start mb-10">
+        <div className="flex flex-col md:flex-row justify-start items-start mb-10">
           <div>
             <h1 className="text-2xl font-semibold">Uber</h1>
             <p className="mt-1">Visit Help Center</p>
@@ -23,9 +23,9 @@ const Footer = () => {
         </div>
 
         {/* Footer Main Content */}
-        <div className="flex justify-between mb-10">
+        <div className="flex flex-col md:flex-row justify-between mb-10">
           {/* Footer Links */}
-          <div className="flex space-x-16">
+          <div className="flex flex-wrap justify-between w-full md:w-auto space-y-6 md:space-y-0 md:space-x-16">
             <div>
               <h3 className="font-bold mb-4">Company</h3>
               <ul>
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media and App Store Icons */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8 space-y-8 md:space-y-0">
           {/* Social Media Icons */}
           <div className="flex space-x-4">
             <img src={FacebookIcon} alt="Facebook" className="w-6 h-6" />
@@ -80,14 +80,14 @@ const Footer = () => {
 
           {/* App Store and Play Store Icons */}
           <div className="flex space-x-4">
-            <img src={AppStoreIcon} alt="Get on App Store" className="w-36" />
-            <img src={PlayStoreIcon} alt="Get on Play Store" className="w-36" />
+            <img src={AppStoreIcon} alt="Get on App Store" className="w-32 md:w-36" />
+            <img src={PlayStoreIcon} alt="Get on Play Store" className="w-32 md:w-36" />
           </div>
         </div>
 
         {/* Footer Bottom Links */}
-        <div className="flex justify-between items-center">
-          <p>© 2024 Uber Technologies Inc.</p>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="mb-4 md:mb-0">© 2024 Uber Technologies Inc.</p>
           <div className="flex space-x-8">
             <span>Privacy</span>
             <span>Accessibility</span>
@@ -100,4 +100,3 @@ const Footer = () => {
 };
 
 export default Footer;
- 
