@@ -6,6 +6,7 @@ import Drive from './components/Drive';
 import BusinessDrive from './components/BusinessDrive';
 import RentCar from './components/RentCar';
 import DownloadSection from './components/DownloadSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BusinessDrive/>
       <RentCar/>
       <DownloadSection/>
+      <Footer/>
     </div>
   );
 }
